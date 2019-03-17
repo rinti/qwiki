@@ -15,5 +15,5 @@ def cli(search):
     if int(page_id) > -1:
         click.echo(pages[page_id]["title"])
         click.echo(pages[page_id]["extract"])
-    
-    click.echo("Didn't find anything.")
+    else:
+        click.echo("Didn't find anything.")
